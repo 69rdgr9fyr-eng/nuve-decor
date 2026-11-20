@@ -1,0 +1,396 @@
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+
+    background-color: #f8f9fa;
+
+    color: #333;
+
+}
+
+.container {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 0 15px;
+
+}
+
+header {
+
+    background-color: #1a1a1a;
+
+    color: #fff;
+
+    padding: 15px 0;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+}
+
+.header-content {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+header h1 {
+
+    font-size: 24px;
+
+    letter-spacing: 2px;
+
+    color: #d4af37;
+
+}
+
+.cart-toggle {
+
+    background-color: #d4af37;
+
+    color: #1a1a1a;
+
+    border: none;
+
+    padding: 8px 15px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+.hero {
+
+    text-align: center;
+
+    padding: 40px 0 20px;
+
+}
+
+.hero h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+
+}
+
+.products-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 20px;
+
+    padding: 20px 0 50px;
+
+}
+
+.product-card {
+
+    background: #fff;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+.product-card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-bottom: 12px;
+
+}
+
+.product-title {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+
+}
+
+.product-price {
+
+    color: #b8860b;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+    margin-bottom: 12px;
+
+}
+
+.options-group {
+
+    margin-bottom: 12px;
+
+}
+
+.options-group label {
+
+    display: block;
+
+    font-size: 13px;
+
+    margin-bottom: 4px;
+
+    color: #555;
+
+}
+
+.options-group select,
+
+.options-group input {
+
+    width: 100%;
+
+    padding: 8px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+}
+
+.add-to-cart-btn {
+
+    width: 100%;
+
+    background-color: #1a1a1a;
+
+    color: #fff;
+
+    border: none;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+.add-to-cart-btn:hover {
+
+    background-color: #d4af37;
+
+    color: #1a1a1a;
+
+}
+
+.cart-sidebar {
+
+    position: fixed;
+
+    top: 0;
+
+    left: -350px;
+
+    width: 320px;
+
+    height: 100%;
+
+    background: #fff;
+
+    box-shadow: 2px 0 15px rgba(0,0,0,0.2);
+
+    z-index: 200;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition: 0.3s;
+
+}
+
+.cart-sidebar.open {
+
+    left: 0;
+
+}
+
+.cart-header {
+
+    background: #1a1a1a;
+
+    color: #fff;
+
+    padding: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.close-btn {
+
+    background: none;
+
+    border: none;
+
+    color: #fff;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+}
+
+.cart-items {
+
+    flex: 1;
+
+    padding: 15px;
+
+    overflow-y: auto;
+
+}
+
+.cart-item {
+
+    border-bottom: 1px solid #eee;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 10px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.cart-item-info h4 {
+
+    font-size: 14px;
+
+    margin-bottom: 3px;
+
+}
+
+.cart-item-info p {
+
+    font-size: 12px;
+
+    color: #666;
+
+}
+
+.remove-btn {
+
+    background: #ff4d4d;
+
+    color: #fff;
+
+    border: none;
+
+    padding: 4px 8px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+}
+
+.cart-footer {
+
+    padding: 15px;
+
+    border-top: 1px solid #eee;
+
+    background: #f9f9f9;
+
+}
+
+.total-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+    margin-bottom: 12px;
+
+}
+
+.whatsapp-btn {
+
+    width: 100%;
+
+    background-color: #25D366;
+
+    color: #fff;
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+ 
