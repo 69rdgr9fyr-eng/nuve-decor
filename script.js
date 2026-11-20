@@ -54,6 +54,7 @@ function renderProducts() {
 <option value="أبيض">أبيض</option>
 <option value="أسود">أسود</option>
 <option value="ذهبي">ذهبي</option>
+<option value="فضي">فضي</option>
 </select>
 </div>
 <div class="options-group">
